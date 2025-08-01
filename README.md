@@ -4,7 +4,7 @@ A WPF desktop application built in C# for processing satellite sensor data using
 
 ## Project Overview
 
-This application reads raw numerical data from two satellite sensors, processes it through a scientific formula provided by the `Galileo.dll`, stores it in LinkedLists, and provides sorting and binary search functionalities.
+This application reads raw numerical data from two satellite sensors (supposedly), processes it through a scientific formula provided by the `Galileo.dll`, stores it in LinkedLists, and provides sorting and binary search functionalities.
 
 ---
 
