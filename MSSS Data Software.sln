@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSSS Data Software", "MSSS Data Software\MSSS Data Software.csproj", "{5029A463-FDC1-49DC-AC42-221C9B4BF7A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5029A463-FDC1-49DC-AC42-221C9B4BF7A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5029A463-FDC1-49DC-AC42-221C9B4BF7A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5029A463-FDC1-49DC-AC42-221C9B4BF7A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5029A463-FDC1-49DC-AC42-221C9B4BF7A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9EDB861-6690-4CC4-90D0-9B84DC0CE283}
+	EndGlobalSection
+EndGlobal
