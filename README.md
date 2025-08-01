@@ -82,13 +82,13 @@ This project follows an Agile development lifecycle using GitHub Projects.
 ## License
 
 This project is for educational purposes only.\
-© 2025 Cody Husband / CITE Managed Services
+© 2025 Cody Husband
 
 ---
 
 ## Author
 
 **Cody Husband**\
-Diploma of IT – TAFE WA\
+Student – TAFE WA\
 GitHub: [https://github.com/zhytu](https://github.com/zhytu)
 
