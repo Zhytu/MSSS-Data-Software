@@ -60,7 +60,7 @@ MSSS-Data-Software/
 
 1. Clone the repo:
    ```
-   git clone https://github.com/yourusername/MSSS-Data-Software.git
+   git clone https://github.com/zhytu/MSSS-Data-Software.git
    ```
 2. Open the solution in Visual Studio.
 3. Build and run the application directly.
