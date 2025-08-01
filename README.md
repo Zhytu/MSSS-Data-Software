@@ -5,8 +5,11 @@ A WPF desktop application built in C# for processing satellite sensor data using
 ## Project Overview
 
 This application reads raw numerical data from two satellite sensors (supposedly), processes it through a scientific formula provided by the `Galileo.dll`, stores it in LinkedLists, and provides sorting and binary search functionalities.
-![alt text](https://raw.githubusercontent.com/Zhytu/MSSS-Data-Software/1a6320eaa89ad9c7f28e7f5c47d2df62a05c9508/datastructures.drawio.png "Current working design for the program.")
 
+## UI prototype
+
+This is our current design for the user interface of this program, it is subject to change if required in future.
+![alt text](https://raw.githubusercontent.com/Zhytu/MSSS-Data-Software/1a6320eaa89ad9c7f28e7f5c47d2df62a05c9508/datastructures.drawio.png "Current working design for the program.")
 
 ---
 
