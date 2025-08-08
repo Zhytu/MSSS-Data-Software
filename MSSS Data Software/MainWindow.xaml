@@ -5,8 +5,104 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MSSS_Data_Software"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="450" Width="796" Background="Gainsboro">
+    <Grid Margin="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="263*"/>
+            <ColumnDefinition Width="405*"/>
+            <ColumnDefinition Width="122*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="White" Grid.ColumnSpan="3"/>
+        <Grid Margin="5,0,5,0" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <DockPanel>
+                <Label DockPanel.Dock="Top" HorizontalAlignment="Center" FontWeight="Bold">Raw Data</Label>
+                <Grid DockPanel.Dock="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <DockPanel Grid.Column="0" LastChildFill="False">
+                        <Label HorizontalAlignment="Center" FontWeight="Bold" DockPanel.Dock="Top">Sigma</Label>
+                        <TextBox DockPanel.Dock="Top" Margin="10,5,10,5"></TextBox>
+                    </DockPanel>
+                    <DockPanel Grid.Column="1" LastChildFill="False">
+                        <Label HorizontalAlignment="Center" FontWeight="Bold" DockPanel.Dock="Top">Mu</Label>
+                        <TextBox DockPanel.Dock="Top" Margin="10,5,10,5"></TextBox>
+                    </DockPanel>
+                </Grid>
+                <DockPanel DockPanel.Dock="Top">
+                    <Button Margin="10,5,10,5" Content="Load Sensor Data" DockPanel.Dock="Top"/>
+                    <ListBox Margin="5"></ListBox>
 
+
+
+                </DockPanel>
+            </DockPanel>
+            <Rectangle Grid.Column="1" Fill="#FFCECECE"/>
+            <DockPanel Grid.Column="2">
+                <Label DockPanel.Dock="Top" HorizontalAlignment="Center" FontWeight="Bold">Sensor A</Label>
+                <Grid DockPanel.Dock="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <DockPanel LastChildFill="False">
+                        <Label DockPanel.Dock="Top" HorizontalAlignment="Center" FontWeight="Bold" Grid.Column="0">Search Target</Label>
+                        <TextBox DockPanel.Dock="Top" Margin="10,5,10,5"></TextBox>
+                        <Label DockPanel.Dock="Top" FontSize="11" HorizontalAlignment="Center">Binary Search Iterative</Label>
+                        <Button DockPanel.Dock="Top" Margin="5">Go</Button>
+                        <TextBox DockPanel.Dock="Top" Margin="5"></TextBox>
+                        <Label DockPanel.Dock="Top" FontSize="11" HorizontalAlignment="Center">Binary Search Recursive</Label>
+                        <Button DockPanel.Dock="Top" Margin="5">Go</Button>
+                        <TextBox DockPanel.Dock="Top" Margin="5"></TextBox>
+                        <Label DockPanel.Dock="Top" FontSize="11" HorizontalAlignment="Center">Selection Sort</Label>
+                        <Button DockPanel.Dock="Top" Margin="5">Go</Button>
+                        <TextBox DockPanel.Dock="Top" Margin="5"></TextBox>
+                        <Label DockPanel.Dock="Top" FontSize="11" HorizontalAlignment="Center">Insertion Sort</Label>
+                        <Button DockPanel.Dock="Top" Margin="5">Go</Button>
+                        <TextBox DockPanel.Dock="Top" Margin="5"></TextBox>
+
+                    </DockPanel>
+
+                    <ListBox Grid.Column="1" Margin="5"></ListBox>
+                </Grid>
+            </DockPanel>
+            <Rectangle Grid.Column="3" Fill="#FFDCDCDC"/>
+            <DockPanel Grid.Column="4">
+                <Label DockPanel.Dock="Top" HorizontalAlignment="Center" FontWeight="Bold">Sensor B</Label>
+                <Grid DockPanel.Dock="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <DockPanel LastChildFill="False">
+                        <Label DockPanel.Dock="Top" HorizontalAlignment="Center" FontWeight="Bold" Grid.Column="0">Search Target</Label>
+                        <TextBox DockPanel.Dock="Top" Margin="10,5,10,5"></TextBox>
+                        <Label DockPanel.Dock="Top" FontSize="11" HorizontalAlignment="Center">Binary Search Iterative</Label>
+                        <Button DockPanel.Dock="Top" Margin="5">Go</Button>
+                        <TextBox DockPanel.Dock="Top" Margin="5"></TextBox>
+                        <Label DockPanel.Dock="Top" FontSize="11" HorizontalAlignment="Center">Binary Search Recursive</Label>
+                        <Button DockPanel.Dock="Top" Margin="5">Go</Button>
+                        <TextBox DockPanel.Dock="Top" Margin="5"></TextBox>
+                        <Label DockPanel.Dock="Top" FontSize="11" HorizontalAlignment="Center">Selection Sort</Label>
+                        <Button DockPanel.Dock="Top" Margin="5">Go</Button>
+                        <TextBox DockPanel.Dock="Top" Margin="5"></TextBox>
+                        <Label DockPanel.Dock="Top" FontSize="11" HorizontalAlignment="Center">Insertion Sort</Label>
+                        <Button DockPanel.Dock="Top" Margin="5">Go</Button>
+                        <TextBox DockPanel.Dock="Top" Margin="5"></TextBox>
+
+                    </DockPanel>
+
+                    <ListBox Grid.Column="1" Margin="5"></ListBox>
+                </Grid>
+            </DockPanel>
+        </Grid>
     </Grid>
 </Window>
