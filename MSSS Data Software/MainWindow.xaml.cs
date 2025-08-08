@@ -93,5 +93,105 @@ namespace MSSS_Data_Software
 			}
 
 		}
+
+		private bool SelectionSort(LinkedList<double> list)
+		{
+			if (list.Count == 0)
+				return false;
+			var current = list.First;
+			while (current != null)
+			{
+				var minNode = current;
+				var nextNode = current.Next;
+				while (nextNode != null)
+				{
+					if (nextNode.Value < minNode.Value)
+					{
+						minNode = nextNode;
+					}
+					nextNode = nextNode.Next;
+				}
+				if (minNode != current)
+				{
+					double temp = current.Value;
+					current.Value = minNode.Value;
+					minNode.Value = temp;
+				}
+				current = current.Next;
+			}
+			return true;
+		}
+
+		private bool InsertionSort(LinkedList<double> list)
+		{
+			if (list.Count == 0)
+				return false;
+			var current = list.First;
+			while (current != null)
+			{
+				var next = current.Next;
+				while (next != null && next.Value < current.Value)
+				{
+					double temp = current.Value;
+					current.Value = next.Value;
+					next.Value = temp;
+					next = next.Next;
+				}
+				current = current.Next;
+			}
+			return true;
+		}
+
+		private int BinarySearchIterative(LinkedList<Double> list, double SearchValue, double minimum, double maximum)
+		{
+			// return index of SearchValue in list, or -1 if not found
+			int left = 0;
+			int right = list.Count - 1;
+			int index = 0;
+			while (left < right)
+			{
+				index = (left + right) / 2;
+				double currentValue = list.ElementAt(index);
+				if (currentValue == SearchValue)
+				{
+					return index; // found
+				}
+				else if (currentValue < SearchValue)
+				{
+					left = index + 1; // search right half
+				}
+				else
+				{
+					right = index - 1; // search left half
+				}
+			}
+			// Check if the last element is the one we are looking for
+			if (left < list.Count && list.ElementAt(left) == SearchValue)
+			{
+				return left; // found
+			}
+			return -1; // not found
+		}
+
+		private int BinarySearchRecursive(LinkedList<Double> list, double SearchValue, double minimum, double maximum)
+		{
+			// return index of SearchValue in list, or -1 if not found
+			if (minimum > maximum)
+				return -1; // not found
+			int mid = (int)((minimum + maximum) / 2);
+			double midValue = list.ElementAt(mid);
+			if (midValue == SearchValue)
+			{
+				return mid; // found
+			}
+			else if (midValue < SearchValue)
+			{
+				return BinarySearchRecursive(list, SearchValue, mid + 1, maximum); // search right half
+			}
+			else
+			{
+				return BinarySearchRecursive(list, SearchValue, minimum, mid - 1); // search left half
+			}
+		}
 	}
 }
