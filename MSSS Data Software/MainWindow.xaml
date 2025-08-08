@@ -75,7 +75,7 @@
 
                     </DockPanel>
 
-                    <ListBox Grid.Column="1" Margin="5"></ListBox>
+                    <ListBox x:Name="ListboxA" Grid.Column="1" Margin="5"></ListBox>
                 </Grid>
             </DockPanel>
             <Rectangle Grid.Column="3" Fill="#FFDCDCDC"/>
@@ -104,7 +104,7 @@
 
                     </DockPanel>
 
-                    <ListBox Grid.Column="1" Margin="5"></ListBox>
+                    <ListBox x:Name="ListboxB" Grid.Column="1" Margin="5"></ListBox>
                 </Grid>
             </DockPanel>
         </Grid>

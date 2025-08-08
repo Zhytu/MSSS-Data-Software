@@ -83,8 +83,14 @@ namespace MSSS_Data_Software
 			return list.Count;
 		}
 
-		private void DisplayListboxData()
+		private void DisplayListboxData(LinkedList<Double> list, ListBox box)
 		{
+			box.Items.Clear();
+
+			foreach (var item in list)
+			{
+				box.Items.Add(item.ToString("F2"));
+			}
 
 		}
 	}
