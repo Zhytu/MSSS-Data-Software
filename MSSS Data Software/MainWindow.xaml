@@ -36,7 +36,14 @@
                 </Grid>
                 <DockPanel DockPanel.Dock="Top">
                     <Button Margin="10,5,10,5" Content="Load Sensor Data" DockPanel.Dock="Top"/>
-                    <ListBox Margin="5"></ListBox>
+                    <ListView Margin="5" DockPanel.Dock="Top">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Sensor A" DisplayMemberBinding="{Binding PlaceholderA}" Width="120"/>
+                                <GridViewColumn Header="Sensor B" DisplayMemberBinding="{Binding PlaceholderA}" Width="120"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
 
 
 
