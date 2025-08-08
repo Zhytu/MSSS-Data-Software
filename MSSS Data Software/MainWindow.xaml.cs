@@ -44,11 +44,9 @@ namespace MSSS_Data_Software
                 ListB.AddLast(sensorBValue);
 
             }
-
-            RefreshListView();
         }
 
-		private void RefreshListView()
+		private void ShowAllSensorData()
 		{
 			ListviewSensor.Items.Clear();
 
@@ -77,6 +75,17 @@ namespace MSSS_Data_Software
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
             LoadData();
+			ShowAllSensorData();
+		}
+
+		private int NumberOfNodes(LinkedList<double> list)
+		{
+			return list.Count;
+		}
+
+		private void DisplayListboxData()
+		{
+
 		}
 	}
 }
