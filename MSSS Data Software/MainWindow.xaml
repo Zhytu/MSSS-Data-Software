@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MSSS_Data_Software"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
         Title="MSSS Software" Height="450" Width="796" Background="Gainsboro"
         MinHeight="480" MinWidth="796">
@@ -26,11 +27,11 @@
                     </Grid.ColumnDefinitions>
                     <DockPanel Grid.Column="0" LastChildFill="False">
                         <Label HorizontalAlignment="Center" FontWeight="Bold" DockPanel.Dock="Top">Sigma</Label>
-                        <TextBox DockPanel.Dock="Top" Margin="10,5,10,5"></TextBox>
+                        <xctk:IntegerUpDown DockPanel.Dock="Top" Margin="10,5,10,5"/>
                     </DockPanel>
                     <DockPanel Grid.Column="1" LastChildFill="False">
                         <Label HorizontalAlignment="Center" FontWeight="Bold" DockPanel.Dock="Top">Mu</Label>
-                        <TextBox DockPanel.Dock="Top" Margin="10,5,10,5"></TextBox>
+                        <xctk:IntegerUpDown DockPanel.Dock="Top" Margin="10,5,10,5"/>
                     </DockPanel>
                 </Grid>
                 <DockPanel DockPanel.Dock="Top">
