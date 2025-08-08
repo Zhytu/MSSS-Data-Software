@@ -5,13 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MSSS_Data_Software"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="796" Background="Gainsboro">
+        Title="MSSS Software" Height="450" Width="796" Background="Gainsboro"
+        MinHeight="480" MinWidth="796">
     <Grid Margin="5">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="263*"/>
-            <ColumnDefinition Width="405*"/>
-            <ColumnDefinition Width="122*"/>
-        </Grid.ColumnDefinitions>
         <Rectangle Fill="White" Grid.ColumnSpan="3"/>
         <Grid Margin="5,0,5,0" Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
