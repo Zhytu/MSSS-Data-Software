@@ -27,20 +27,20 @@
                     </Grid.ColumnDefinitions>
                     <DockPanel Grid.Column="0" LastChildFill="False">
                         <Label HorizontalAlignment="Center" FontWeight="Bold" DockPanel.Dock="Top">Sigma</Label>
-                        <xctk:IntegerUpDown DockPanel.Dock="Top" Margin="10,5,10,5"/>
+                        <xctk:DoubleUpDown Name="InputSigma" DockPanel.Dock="Top" Margin="10,5,10,5"/>
                     </DockPanel>
                     <DockPanel Grid.Column="1" LastChildFill="False">
                         <Label HorizontalAlignment="Center" FontWeight="Bold" DockPanel.Dock="Top">Mu</Label>
-                        <xctk:IntegerUpDown DockPanel.Dock="Top" Margin="10,5,10,5"/>
+                        <xctk:DoubleUpDown Name="InputMu" DockPanel.Dock="Top" Margin="10,5,10,5"/>
                     </DockPanel>
                 </Grid>
                 <DockPanel DockPanel.Dock="Top">
-                    <Button Margin="10,5,10,5" Content="Load Sensor Data" DockPanel.Dock="Top"/>
-                    <ListView Margin="5" DockPanel.Dock="Top">
+                    <Button x:Name="ButtonLoadSensorData" Margin="10,5,10,5" Content="Load Sensor Data" DockPanel.Dock="Top" Click="Button_Click"/>
+                    <ListView x:Name="ListviewSensor" Margin="5" DockPanel.Dock="Top">
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn Header="Sensor A" DisplayMemberBinding="{Binding PlaceholderA}" Width="120"/>
-                                <GridViewColumn Header="Sensor B" DisplayMemberBinding="{Binding PlaceholderA}" Width="120"/>
+                                <GridViewColumn Header="Sensor A" Width="100" DisplayMemberBinding="{Binding SensorA}"/>
+                                <GridViewColumn Header="Sensor B" Width="100" DisplayMemberBinding="{Binding SensorB}"/>
                             </GridView>
                         </ListView.View>
                     </ListView>
